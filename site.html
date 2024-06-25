@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mency - Личная веб-страница</title>
+    <!-- Подключаем библиотеку Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden; /* Для обеспечения корректного отображения анимаций */
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 30px;
+            color: #555;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Иконка Telegram для личных сообщений */
+        .social-icons .fab.fa-telegram.personal {
+            color: #0088cc; /* Голубой цвет для иконки Telegram личные сообщения */
+        }
+
+        /* Иконка Telegram для канала */
+        .social-icons .fab.fa-telegram.channel {
+            color: #000; /* Черный цвет для иконки Telegram канал */
+        }
+
+        /* Иконка Instagram */
+        .social-icons .fab.fa-instagram {
+            color: #bc2a8d; /* Оригинальный цвет Instagram */
+        }
+
+        /* Иконка SoundCloud */
+        .social-icons .fab.fa-soundcloud {
+            color: #ff8800; /* Оригинальный цвет SoundCloud */
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            .social-icons {
+                position: relative;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .social-icons a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="ava.jpg" alt="mency">
+            <h1>mency</h1>
+        </header>
+        <div class="social-icons">
+            <a href="https://t.me/ceorip" target="_blank" title="Личные сообщения"><i class="fab fa-telegram personal"></i></a>
+            <a href="https://t.me/your_channel" target="_blank" title="Канал с творчеством"><i class="fab fa-telegram channel"></i></a>
+            <a href="https://www.instagram.com/rusechka.damn" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://soundcloud.com/your_soundcloud_username" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+        </div>
+        <section>
+            <h2>О мне</h2>
+            <p>Привет! Я mency — ваше воображаемое воплощение в виртуальном мире. Я занимаюсь написанием музыки и увлекаюсь программированием. Открыт для новых идей и интересных проектов.</p>
+        </section>
+        <section>
+            <h2>Мои интересы</h2>
+            <p>Я также интересуюсь разработкой веб-сайтов, искусственным интеллектом, космосом и многим другим. Люблю учиться новому и делиться своими знаниями с другими.</p>
+        </section>
+        <footer class="footer">
+            <p>© 2024 mency. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <!-- Скрипт для активации анимации фона -->
+    <script>
+        // Анимация фона через добавление класса с анимацией
+        document.body.classList.add('animate-bg');
+
+        // Опционально: Остановить анимацию после некоторого времени (например, 15 секунд)
+        setTimeout(function() {
+            document.body.classList.remove('animate-bg');
+        }, 15000); // 15 секунд
+    </script>
+</body>
+</html>
